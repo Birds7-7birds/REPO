@@ -1,11 +1,82 @@
 body {
   background-color: beige;
   }
-nav {
+header {
   color: lightblue;
   text-align: center;
+  background-color: lightblue;
+  width: 100%;
 }
 .indexh1 {
   font-family: 'Montserrat', sans-serif;
 }
 
+/*grid display >600*/
+#ulgrid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;    
+}
+.one{
+  width: 1fr;
+  grid-column: 1fr;
+  grid-row: 1/2;
+  height: 1fr;
+  border-bottom: 1px solid black;  
+}
+.oneone{
+  width: 1fr;
+  grid-row: 1/2;
+  grid-column-start: 2;
+  border-style: solid;
+  border-style: hidden;
+  border-bottom: 1px solid black;
+}
+.two{
+  width: 1fr;
+  grid-column: 1fr;
+  border-bottom: 1px solid black;
+}
+.twotwo{
+  width: 1fr;
+  grid-row: 2/3;
+  grid-column-start: 2;
+  border-bottom: 1px solid black;
+}
+.three{
+  width: 1fr;
+  grid-column: 1fr;}
+.threethree{
+  width: 1fr;
+  grid-row: 3/4;
+  grid-column-start: 2;
+}
+/*grid <600*/
+@media screen and (max-width: 600px) {
+  #ulgrid{
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: repeat(6, 1fr);  
+  }
+  .one{
+    width: 1fr;
+    border-bottom: 1px none black;    
+  }
+  .oneone{
+    width: 1fr;
+    border-bottom: 1px solid black;  
+  }
+  .two{
+    width: 1fr;
+    border-bottom: 1px none black;  }
+  .twotwo{
+    width: 1fr;
+    border-bottom: 1px solid black;  
+  }
+  .three{
+    width: 1fr;
+  }
+  .threethree{
+    width: 1fr;
+  }
+}
