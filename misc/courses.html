@@ -3,7 +3,7 @@
 <head>
 <meta charset+"utf-8">
 <title>Courses</title>
-<script src="../js/js_file.js"></script>
+
 <link href="../personal_website/css/stylesheet.css" rel="stylesheet">
 
 
@@ -17,35 +17,40 @@
     </header>
 
 <h1>Three of my couses are :</h1>
-<section>
+<section id = "test">
 
-    <div id="ulgrid">
         <div class="one">
-            <a href="https://www.bcit.ca/study/outlines/20203044280">ACIT 1420 - Introduction to Systems Administration</a><p>fall 2020</p>
+            <a class="hats" href="https://www.bcit.ca/study/outlines/20203044280">ACIT 1420 - Introduction to Systems Administration</a><p>fall 2020</p>
         </div>
         <div class="oneone">
-            <p class="des">a class where we learn about system administration</p>
+            <p class="hats">a class where we learn about system administration</p>
         </div>
         <div class="two">
-            <a href="https://www.bcit.ca/study/outlines/20203034320">ACIT 1515 - Scripting for IT</a><p>fall 2020</p>
+            <a class="hats" href="https://www.bcit.ca/study/outlines/20203034320">ACIT 1515 - Scripting for IT</a><p>fall 2020</p>
         </div>
         <div class="twotwo">
-            <p class="des">a class where we learn about scripting</p>
+            <p class="hats">a class where we learn about scripting</p>
         </div>
-        <div class="three">
-            <a href="https://www.bcit.ca/study/outlines/20203034356">ACIT 1630 - Database Systems</a><p>fall 2020</p>
+        <div class="anyother">
+            <a class="hats" href="https://www.bcit.ca/study/outlines/20203034356">ACIT 1630 - Database Systems</a><p>fall 2020</p>
         </div>
-        <div class="threethree">
-            <p class="des">a class where we learn about databases</p>
+        <div class="anyother">
+            <p class="hats">a class where we learn about databases</p>
         </div>
-    </div>
 
 </section>
-    <input type="text" id="contact"/>
+<div id ="new">
+
+</div>
+    <input type="text" id="contact" placeholder="Check if i am taking this"/>
     <button onClick="checkInput()">Submit</button>
     <p id="return message"></p>
+
+    <input type="text" id="makergreen" placeholder="makes green or new"/>
+    <button onClick="findcourse()">Submit</button>
     <p id="demo"></p>
 
+<script src="../js/js_file.js"></script>
 
 </body>
 </html>

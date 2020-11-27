@@ -12,9 +12,9 @@ header {
 }
 
 /*grid display >600*/
-#ulgrid{
+section{
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+
   grid-template-columns: 1fr 1fr;    
 }
 .one{
@@ -39,8 +39,6 @@ header {
 }
 .twotwo{
   width: 1fr;
-  grid-row: 2/3;
-  grid-column-start: 2;
   border-bottom: 1px solid black;
 }
 .three{
@@ -48,12 +46,13 @@ header {
   grid-column: 1fr;}
 .threethree{
   width: 1fr;
-  grid-row: 3/4;
-  grid-column-start: 2;
+}
+.anyother{
+  width: 1fr;
 }
 /*grid <600*/
 @media screen and (max-width: 600px) {
-  #ulgrid{
+  section{
     display: flex;
     flex-direction: column;
     grid-template-rows: repeat(6, 1fr);  
@@ -77,6 +76,9 @@ header {
     width: 1fr;
   }
   .threethree{
+    width: 1fr;
+  }
+  .anyother{
     width: 1fr;
   }
 }
